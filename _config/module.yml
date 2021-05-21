@@ -1,0 +1,8 @@
+---
+Name: bbp-contactform-element
+---
+
+SilverStripe\SiteConfig\SiteConfig:
+  extensions:
+    - BiffBangPow\Element\Extension\ContactFormConfigExtension
+

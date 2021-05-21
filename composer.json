@@ -1,6 +1,6 @@
 {
-  "name": "biffbangpow/silverstripe-elementmodule-template",
-  "description": "A basic skeleton for a Silverstripe 4 elemental module",
+  "name": "biffbangpow/silverstripe-contactform-element",
+  "description": "Contact form element",
   "type": "silverstripe-vendormodule",
   "minimum-stability": "dev",
   "license": "proprietary",
@@ -17,7 +17,10 @@
   "require": {
     "silverstripe/vendor-plugin": "^1.0",
     "silverstripe/cms": "^4",
-    "dnadesign/silverstripe-elemental": "^4@stable || ^3@stable"
+    "dnadesign/silverstripe-elemental": "^4@stable || ^3@stable",
+    "silverstripe/spamprotection": "^3.0",
+    "undefinedoffset/silverstripe-nocaptcha": "^2.0",
+    "biffbangpow/silverstripe-flashmessage-extension": "^1"
   },
   "autoload": {
     "psr-4": {
@@ -25,8 +28,5 @@
     }
   },
   "extra": {
-    "expose": [
-      "client/dist"
-    ]
   }
 }
