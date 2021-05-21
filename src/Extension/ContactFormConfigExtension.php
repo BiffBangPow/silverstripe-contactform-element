@@ -1,6 +1,6 @@
 <?php
 
-namespace BiffBangPow\Element\MyElement\Extension;
+namespace BiffBangPow\Element\Extension;
 
 use SilverStripe\Forms\FieldList;
 use SilverStripe\Forms\TextField;
