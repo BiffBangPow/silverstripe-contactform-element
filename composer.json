@@ -20,7 +20,8 @@
     "dnadesign/silverstripe-elemental": "^4@stable || ^3@stable",
     "silverstripe/spamprotection": "^3.0",
     "undefinedoffset/silverstripe-nocaptcha": "^2.0",
-    "biffbangpow/silverstripe-flashmessage-extension": "^1"
+    "biffbangpow/silverstripe-flashmessage-extension": "^1",
+    "biffbangpow/silverstripe-markdowntext-extension": "dev-master"
   },
   "autoload": {
     "psr-4": {
