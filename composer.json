@@ -21,7 +21,7 @@
     "silverstripe/spamprotection": "^3.0",
     "undefinedoffset/silverstripe-nocaptcha": "^2.0",
     "biffbangpow/silverstripe-flashmessage-extension": "^1",
-    "biffbangpow/silverstripe-markdowntext-extension": "dev-master"
+    "biffbangpow/silverstripe-markdowntext-extension": "^1"
   },
   "autoload": {
     "psr-4": {
