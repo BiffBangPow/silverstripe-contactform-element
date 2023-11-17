@@ -15,6 +15,8 @@ use SilverStripe\Forms\RequiredFields;
 use SilverStripe\Forms\TextareaField;
 use SilverStripe\Forms\TextField;
 use SilverStripe\SiteConfig\SiteConfig;
+use SilverStripe\View\Requirements;
+use SilverStripe\View\ThemeResourceLoader;
 
 
 class ContactFormElementController extends ElementController
@@ -25,6 +27,17 @@ class ContactFormElementController extends ElementController
     private static $allowed_actions = [
         'ContactForm',
     ];
+
+
+    protected function init()
+    {
+        parent::init();
+        $themeCSS = ThemeResourceLoader::inst()->findThemedCSS('client/dist/css/elements/contactform');
+        if ($themeCSS) {
+            Requirements::css($themeCSS, '', ['defer' => true]);
+        }
+    }
+
 
     /**
      * @return Form
