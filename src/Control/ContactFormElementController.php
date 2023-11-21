@@ -51,8 +51,8 @@ class ContactFormElementController extends ElementController
 
         $fields = FieldList::create([
             TextField::create('Name')->addExtraClass('col-12'),
-            TextField::create('PhoneNumber', 'Phone Number')->addExtraClass('col-12 col-lg-6'),
-            EmailField::create('Email')->addExtraClass('col-12 col-lg-6'),
+            TextField::create('PhoneNumber', 'Phone Number')->addExtraClass('col-12'),
+            EmailField::create('Email')->addExtraClass('col-12'),
             TextareaField::create('Enquiry')->setRows(5)->addExtraClass('col-12'),
             CheckboxField::create('ContactConsent', $linkHTML)->addExtraClass('col-12'),
         ]);
