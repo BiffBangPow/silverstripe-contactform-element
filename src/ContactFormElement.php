@@ -35,6 +35,6 @@ class ContactFormElement extends BaseElement
 
     public function getSimpleClassName()
     {
-        return 'contact-form-element';
+        return 'bbp-contact-form-element';
     }
 }
