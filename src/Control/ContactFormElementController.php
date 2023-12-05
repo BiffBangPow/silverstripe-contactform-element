@@ -107,7 +107,7 @@ class ContactFormElementController extends ElementController
         if ($data['ContactConsent'] === '1' || $data['ContactConsent'] === 1) {
 
             $email = Email::create();
-            $email->setHTMLTemplate('ContactFormEmail');
+            $email->setHTMLTemplate('BiffBangPow/Emails/ContactFormEmail');
             $email->setFrom($from);
             $email->setReplyTo($data['Email']);
             $email->setTo($recipient);
