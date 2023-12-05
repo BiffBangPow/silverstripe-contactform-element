@@ -108,7 +108,7 @@ class ContactFormElementController extends ElementController
 
             $email = Email::create();
             $email->setHTMLTemplate('BiffBangPow/Emails/ContactFormEmail');
-            $email->setFrom($from);
+            $email->setFrom($from, $config->Title);
             $email->setReplyTo($data['Email']);
             $email->setTo($recipient);
             $email->setSubject('Contact form has been filled in');
