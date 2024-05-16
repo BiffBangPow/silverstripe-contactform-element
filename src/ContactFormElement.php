@@ -20,6 +20,10 @@ class ContactFormElement extends BaseElement
 
     private static $controller_class = ContactFormElementController::class;
 
+    private static $use_default_js = true;
+
+    private static $use_default_css = true;
+
     public function ContactForm()
     {
         return $this->getController()->ContactForm();

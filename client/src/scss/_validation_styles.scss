@@ -1,0 +1,20 @@
+
+@mixin invalid-field {
+  border: 1px solid red;
+}
+
+.form-validated {
+  //Invalid / missing
+  input:invalid,
+  select:invalid,
+  textarea:invalid {
+    @include invalid-field;
+  }
+
+  //Empty but required
+  input:required:empty,
+  select:required:empty,
+  textarea:required:empty {
+    @include invalid-field;
+  }
+}

@@ -1,0 +1,11 @@
+.form-validated input:invalid,
+.form-validated select:invalid,
+.form-validated textarea:invalid {
+  border: 1px solid red;
+}
+.form-validated input:required:empty,
+.form-validated select:required:empty,
+.form-validated textarea:required:empty {
+  border: 1px solid red;
+}
+/*# sourceMappingURL=../../dist/css/maps/contactform.css.map */

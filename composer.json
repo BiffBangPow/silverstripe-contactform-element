@@ -18,9 +18,6 @@
     "silverstripe/vendor-plugin": "^1.0",
     "silverstripe/cms": "^4",
     "dnadesign/silverstripe-elemental": "^4@stable || ^3@stable",
-    "silverstripe/spamprotection": "^3.0",
-    "undefinedoffset/silverstripe-nocaptcha": "^2.0",
-    "biffbangpow/silverstripe-flashmessage-extension": "^1",
     "biffbangpow/silverstripe-markdowntext-extension": "^1"
   },
   "autoload": {
@@ -29,5 +26,8 @@
     }
   },
   "extra": {
+      "expose": [
+          "client/dist"
+      ]
   }
 }
