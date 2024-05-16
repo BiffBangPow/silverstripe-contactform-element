@@ -52,7 +52,7 @@ function submitContactForm(token, formID) {
                 submitButton.removeAttribute('disabled');
                 messageField.innerHTML = data.message;
                 if (data.success) {
-                    formElem.reset;
+                    formElem.reset();
                 }
             })
             .catch(error => {
