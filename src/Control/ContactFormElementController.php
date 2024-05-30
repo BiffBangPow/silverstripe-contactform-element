@@ -3,7 +3,7 @@
 namespace BiffBangPow\Element\Control;
 
 use BiffBangPow\Element\ContactFormElement;
-use BiffBangPow\Element\Helper\ContactCaptchaHelper;
+use BiffBangPow\Element\Helper\CaptchaHelper;
 use DNADesign\Elemental\Controllers\ElementController;
 use SilverStripe\Control\Controller;
 use SilverStripe\Control\Director;
@@ -169,7 +169,7 @@ class ContactFormElementController extends ElementController
         }
 
         //Check the captcha
-        $check = ContactCaptchaHelper::validateRequestSecurity($request, 'submit');
+        $check = CaptchaHelper::validateRequestSecurity($request, 'submit');
         if ($check !== true) {
             return json_encode([
                 'success' => false,
