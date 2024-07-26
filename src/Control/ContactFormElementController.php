@@ -107,19 +107,25 @@ class ContactFormElementController extends ElementController
             ], ''))
         );
 
+        $required = RequiredFields::create([
+                'Name',
+                'PhoneNumber',
+                'Email',
+                'Enquiry',
+                'ContactConsent',
+            ]
+        );
+
+        $this->extend('UpdateContactFormFields', $fields);
+        $this->extend('UpdateContactFormRequiredFields', $required);
+
         $form = Form::create(
             $this,
             __FUNCTION__ . '-' . $this->ID,
             $fields,
             $actions,
-            new RequiredFields([
-                    'Name',
-                    'PhoneNumber',
-                    'Email',
-                    'Enquiry',
-                    'ContactConsent',
-                ]
-            ));
+            $required
+        );
 
         $form->setAttribute('data-formid', $this->ID);
 
