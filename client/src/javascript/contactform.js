@@ -36,7 +36,7 @@ function submitContactForm(token, formID) {
 
     if (formElem !== null) {
 
-        const submitButton = formElem.querySelector(':scope button[type=submit]');
+        const submitButton = formElem.querySelector(':scope [type=submit]');
         const messageField = formElem.querySelector(':scope div.form-message');
         const formData = new FormData(formElem);
 
