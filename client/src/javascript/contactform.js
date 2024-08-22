@@ -7,7 +7,7 @@ const contactFormElems = document.querySelectorAll('.bbp-contact-form-element');
 function initContactForms() {
     contactFormElems.forEach((formElem) => {
         let contactForm = formElem.querySelector(':scope form');
-        let submitButton = formElem.querySelector(':scope button[type=submit]');
+        let submitButton = formElem.querySelector(':scope [type=submit]');
         let messageField = formElem.querySelector(':scope div.form-message');
 
         contactForm.addEventListener('submit', (e) => {
