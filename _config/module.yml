@@ -5,7 +5,3 @@ Name: bbp-contactform-element
 SilverStripe\SiteConfig\SiteConfig:
   extensions:
     - BiffBangPow\Element\Extension\ContactFormConfigExtension
-
-DNADesign\Elemental\Models\BaseElement:
-  extensions:
-    - BiffBangPow\Extension\MarkdownTextExtension

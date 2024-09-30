@@ -11,17 +11,11 @@ class ContactFormElement extends BaseElement
      * @var string
      */
     private static $table_name = 'ElementContactForm';
-
-    private static $singular_name = 'contact form element';
-
-    private static $plural_name = 'contact form elements';
-
+    private static $singular_name = 'Contact form element';
+    private static $plural_name = 'Contact form elements';
     private static $description = 'A simple contact form';
-
     private static $controller_class = ContactFormElementController::class;
-
     private static $use_default_js = true;
-
     private static $use_default_css = true;
 
     public function ContactForm()
