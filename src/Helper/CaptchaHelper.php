@@ -45,7 +45,9 @@ class CaptchaHelper
         $captchaToken = $request->postVar('g-recaptcha-response');
         $captchaResponse = self::verifyCaptcha($captchaToken);
 
-        Injector::inst()->get(LoggerInterface::class)->info(print_r($captchaResponse, true));
+        if (Director::isDev()) {
+            Injector::inst()->get(LoggerInterface::class)->info(print_r($captchaResponse, true));
+        }
 
 
         //Check that our captcha worked
