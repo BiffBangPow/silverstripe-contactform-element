@@ -141,6 +141,7 @@ class ContactFormElementController extends ElementController
         );
 
         $form->setAttribute('novalidate', true);
+        $this->extend('UpdateContactForm', $form);
 
         return $form;
     }
