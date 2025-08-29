@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-12">
                 <% if $ShowTitle %>
-                    <h2 class="element-title mb-4">$MarkdownText.Title.RAW</h2>
+                    <h2 class="element-title mb-4">$Title</h2>
                 <% end_if %>
             </div>
         </div>
