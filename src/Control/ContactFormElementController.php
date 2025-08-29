@@ -100,7 +100,7 @@ class ContactFormElementController extends ElementController
         ]);
 
         $actions = FieldList::create(
-            FormAction::create('sendContactForm', 'Submit')
+            $formAction = FormAction::create('sendContactForm', 'Submit')
                 ->addExtraClass('btn-primary enable-after-recaptcha'),
             LiteralField::create('Message', HTML::createTag('div', [
                 'class' => 'form-message py-3'
@@ -118,6 +118,7 @@ class ContactFormElementController extends ElementController
 
         $this->extend('UpdateContactFormFields', $fields);
         $this->extend('UpdateContactFormRequiredFields', $required);
+        $this->extend('UpdateContactFormSubmit', $formAction);
 
         $form = Form::create(
             $this,
